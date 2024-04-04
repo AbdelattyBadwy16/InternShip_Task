@@ -1,0 +1,49 @@
+.fin-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.fin-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fin-card {
+    background-image: linear-gradient(#c640f6, #7f24fb);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fin-card p {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .fin-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .fin-cards {
+        grid-template-columns: 1fr ;
+    }
+
+}

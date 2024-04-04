@@ -1,0 +1,140 @@
+.side-bar {
+    width: 20%;
+    padding: 20px 0;
+    min-height: 100vh;
+    position: sticky;
+    top : 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.side-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.side-bar-ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.side-bal-sub-ul,
+.side-bar-ul {
+    list-style-type: none;
+}
+
+.side-bar-ul,
+.settings,
+.profile {
+    padding: 0 20px;
+}
+
+
+.side-bar-li {
+    cursor: pointer;
+    color: #c3c9de;
+}
+
+.side-bal-sub-ul li:hover {
+    background-color: #121933;
+}
+
+.side-bar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.side-bal-sub-ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.li-title {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.li-before{
+    background-color: #121933;
+}
+.li-before::before {
+    content: "|";
+    width: 5px;
+    background-color: #c640f6;
+    color: #c640f6;
+    margin-right: 5px;
+}
+
+.activeTab {
+    color: #c640f6;
+}
+
+.settings {
+    padding-top: 20px;
+    cursor: pointer;
+    color: #a8b2d5;
+}
+
+.profile-info {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .side-bar{
+        width: 25%;
+        margin-right: 20px;
+    }
+    .arrow{
+        display: none;
+    }
+
+    .logo{
+        padding: 15px 0 0 15px ;
+    }
+   
+}
+
+@media screen and (max-width: 800px) {
+    .side-bar{
+        position: fixed;
+        display: none;
+        background-color: #081027;
+        width: auto;
+        height: 100%;
+        z-index: 5000;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        padding: 15px 0 0 15px ;
+    }
+}
+

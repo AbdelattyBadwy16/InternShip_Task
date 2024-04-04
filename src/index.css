@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.dashbord{
+  background-color: #081027;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+
+  .dashbord{
+    width: 100%;
+    min-width: 550px;
+  }
+   
+}
+
