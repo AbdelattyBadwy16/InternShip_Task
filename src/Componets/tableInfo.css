@@ -17,9 +17,7 @@
 }
 
 @media screen and (max-width: 800px) {
-
     .fin-cards {
         grid-template-columns: 1fr 1fr;
     }
-
 }
